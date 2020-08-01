@@ -1,0 +1,99 @@
+{
+  "name": "@xpf0000/vuedragdropalign",
+  "version": "1.0.2",
+  "author": "250881478@qq.com",
+  "main": "dist/VueDragDropAlign.umd.min.js",
+  "unpkg": "dist/VueDragDropAlign.umd.min.js",
+  "browser": {
+    "./sfc": "src/vue-draggable-resizable.vue"
+  },
+  "private": false,
+  "description": "Vue2 Component for drag drop resize rotate align elements",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name VueDragDropAlign ./src/index.js",
+    "unit": "cross-env BABEL_ENV=test mocha-webpack --webpack-config=webpack.test.js tests/unit/specs/**/*.js",
+    "unit-watch": "cross-env BABEL_ENV=test mocha-webpack --watch --webpack-config=webpack.test.js tests/unit/specs/**/*.js",
+    "feature": "cross-env BABEL_ENV=test node_modules/karma/bin/karma start tests/feature/karma.conf.js --single-run",
+    "feature-watch": "cross-env BABEL_ENV=test node_modules/karma/bin/karma start tests/feature/karma.conf.js",
+    "test": "npm run unit && npm run feature",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "gh-pages:clean": "rm -rf docs",
+    "gh-pages:build": "build-storybook -c .storybook -o docs",
+    "gh-pages:publish": "$(npm bin)/git-directory-deploy --directory docs",
+    "gh-pages": "npm run gh-pages:clean && npm run gh-pages:build && npm run gh-pages:publish"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/addon-notes": "^5.3.19",
+    "@storybook/vue": "^5.3.19",
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-service": "^4.4.6",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-plugin-istanbul": "^5.2.0",
+    "babel-preset-vue": "^2.0.2",
+    "chai": "^4.1.2",
+    "cross-env": "^5.2.1",
+    "git-directory-deploy": "^1.5.1",
+    "karma": "^5.1.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.3",
+    "karma-coverage-istanbul-reporter": "^2.1.1",
+    "karma-mocha": "^2.0.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^4.0.2",
+    "mocha": "^6.2.3",
+    "mocha-webpack": "^2.0.0-beta.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "sinon": "^7.5.0",
+    "style-loader": "^1.2.1",
+    "syn": "^0.14.1",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.44.1",
+    "babel-eslint": "^7.2.3",
+    "eslint-loader": "^4.0.2"
+  },
+  "files": [
+    "/dist/*",
+    "/src/components/vue-draggable-resizable.css",
+    "/src/components/vue-draggable-resizable.vue",
+    "/src/icon/rotate.js",
+    "/src/utils/*",
+    "/src/index.js",
+    "*.json"
+  ],
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpf0000/VueDragDropAlign.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xpf0000/VueDragDropAlign/issues"
+  },
+  "homepage": "https://github.com/xpf0000/VueDragDropAlign",
+  "keywords": [
+    "vue",
+    "component",
+    "draggable",
+    "resizable",
+    "droppable",
+    "rotatable",
+    "alignable"
+  ],
+  "dependencies": {
+    "@xpf0000/dom-points": "^1.0.6",
+    "@xpf0000/vuesvgicon": "^1.0.3"
+  }
+}
