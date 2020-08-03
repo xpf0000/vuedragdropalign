@@ -1,8 +1,17 @@
 <template>
   <div id="app">
-    <vue-draggable-resizable :x="0" :y="0" :w="300" :h="300" :active="true">
-      <vue-draggable-resizable :x="0" :y="0" :w="200" :h="200">
-      </vue-draggable-resizable>
+    <vue-draggable-resizable
+      :dropable="true"
+      :dropinable="true"
+      :parent="true" :x="200" :y="320" :w="200" :h="200">
+      VueDragDropAlign 0
+    </vue-draggable-resizable>
+
+    <vue-draggable-resizable
+      :dropable="true"
+      :dropinable="true"
+      :parent="true" :x="500" :y="320" :w="200" :h="200">
+      VueDragDropAlign 1
     </vue-draggable-resizable>
   </div>
 </template>

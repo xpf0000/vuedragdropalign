@@ -1,6 +1,6 @@
 {
   "name": "@xpf0000/vuedragdropalign",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "250881478@qq.com",
   "main": "dist/VueDragDropAlign.umd.min.js",
   "unpkg": "dist/VueDragDropAlign.umd.min.js",

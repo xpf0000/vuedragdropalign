@@ -1,10 +1,12 @@
 <h1 align="center">VueDragDropAlign</h1>
 
-[![Latest Version on NPM](https://img.shields.io/npm/v/vue-draggable-resizable.svg?style=flat-square)](https://npmjs.com/package/@xpf0000/vuedragdropalign)
+[![Latest Version on NPM](https://img.shields.io/npm/v/@xpf0000/vuedragdropalign.svg?style=flat-square)](https://npmjs.com/package/@xpf0000/vuedragdropalign)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![npm](https://img.shields.io/npm/dt/vue-draggable-resizable.svg?style=flat-square)](https://www.npmjs.com/package/@xpf0000/vuedragdropalign)
+[![npm](https://img.shields.io/npm/dt/@xpf0000/vuedragdropalign.svg?style=flat-square)](https://www.npmjs.com/package/@xpf0000/vuedragdropalign)
 
 > Vue2 Component for drag drop resize rotate align elements
+
+![screen.gif](http://source.xpfme.com/image/vuedragdropalign.gif)
 
 ## Table of Contents
 
